@@ -4,9 +4,11 @@
   --tertiary-color: #006400;
   --my-border: 2px solid var(--tertiary-color);
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
@@ -39,16 +41,20 @@ h3 {
 a {
   color: #006400;
 }
+
 a:hover,
 a:focus {
   color: var(--secondary-color);
 }
+
 a:visited {
   color: Violet;
 }
+
 a:active {
   color: Cyan;
 }
+
 button {
   border: var(--my-border);
   display: inline-block;
@@ -60,11 +66,13 @@ button {
   transition: opacity 0.2s;
   border-radius: 4px;
 }
+
 button:hover,
 button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
+
 #input-submit {
   border: var(--my-border);
   font-family: "Source Sans Pro";
@@ -74,25 +82,30 @@ button:focus {
   padding: 10px;
   border-radius: 4px;
 }
+
 .page-header {
   display: flex;
   width: 100%;
-  padding: 0px;
+  padding: 0;
   background-color: var(--primary-color);
 }
+
 .page-header__logo {
   width: 110px;
   margin-right: 10px;
   float: left;
   background-color: white;
 }
+
 .page-header__item {
   flex: 0 1 200px;
 }
+
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
 }
+
 #page-header__name {
   text-align: left;
   font-family: "Source Sans Pro", sans-serif;
@@ -103,136 +116,164 @@ button:focus {
   margin: auto;
   padding-left: 15px;
 }
+
 .topnav {
   background-color: var(--primary-color);
   overflow: hidden;
 }
+
 .topnav a {
   float: left;
   color: white;
   text-align: left;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px;
   text-decoration: none;
   font-size: 17px;
 }
+
 .topnav a:hover {
   background-color: var(--tertiary-color);
   color: White;
 }
+
 .topnav a.active {
   background-color: Gray;
   color: black;
 }
+
 .navigation-list {
   list-style-type: none;
 }
+
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
 }
+
 .navigation-list__item--active {
   text-decoration: none;
 }
+
 .profile {
   max-width: 700px;
   margin: 0 auto;
 }
+
 .profile__portrait {
   float: left;
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
 }
+
 .profile__text {
   flex: 1 1 100px;
 }
+
 .my-skills {
   max-width: 700px;
   display: flex;
   margin: 0 auto;
   height: 250px;
 }
+
 #skills-title {
   max-width: 700px;
   margin: 0 auto;
 }
+
 #skills-table {
   width: 50%;
   height: inherit;
 }
+
 #skills-table td {
   text-align: center;
 }
+
 #skills-bars {
   width: 50%;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
+
 #bar1 {
   width: 50px;
   height: 50px;
   background-color: darkturquoise;
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px;
   transition: 1s;
   -webkit-transition: 1s;
 }
+
 #bar1:hover {
   height: 90px;
 }
+
 #bar2 {
   width: 50px;
   height: 100px;
   background-color: lightseagreen;
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px;
   transition: 1s;
   -webkit-transition: 1s;
 }
+
 #bar2:hover {
   height: 140px;
 }
+
 #bar3 {
   width: 50px;
   height: 150px;
   background-color: lightsalmon;
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px;
   transition: 1s;
   -webkit-transition: 1s;
 }
+
 #bar3:hover {
   height: 190px;
 }
+
 #bar4 {
   width: 50px;
   height: 200px;
   background-color: lightcoral;
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px;
   transition: 1s;
   -webkit-transition: 1s;
 }
+
 #bar4:hover {
   height: 240px;
 }
+
 #bar5 {
   width: 50px;
   height: 250px;
   background-color: firebrick;
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px;
   transition: 1s;
   -webkit-transition: 1s;
 }
+
 #bar5:hover {
   height: 290px;
 }
+
 .contact-body__column {
   float: left;
   width: 50%;
 }
-.contact-body:after {
+
+.contact-body::after {
   content: "";
   display: table;
   clear: both;
 }
+
 .contact-body {
   max-width: 700px;
   margin: 0 auto;
@@ -266,12 +307,15 @@ button:focus {
   flex-direction: column;
   text-align: center;
 }
+
 .social-media {
   display: inline-block;
 }
+
 #contact-form {
   width: 100%;
 }
+
 #input-name {
   margin: 4px;
   width: inherit;
@@ -279,6 +323,7 @@ button:focus {
   border: var(--my-border);
   border-radius: 4px;
 }
+
 #input-email {
   margin: 4px;
   width: inherit;
@@ -286,6 +331,7 @@ button:focus {
   border: var(--my-border);
   border-radius: 4px;
 }
+
 #input-phone {
   margin: 4px;
   width: inherit;
@@ -293,6 +339,7 @@ button:focus {
   border: var(--my-border);
   border-radius: 4px;
 }
+
 #input-subject {
   margin: 4px;
   width: auto;
@@ -300,6 +347,7 @@ button:focus {
   border: var(--my-border);
   border-radius: 4px;
 }
+
 #input-message {
   margin: 4px;
   width: inherit;
@@ -308,6 +356,7 @@ button:focus {
   border: var(--my-border);
   border-radius: 4px;
 }
+
 #phone {
   margin-top: 50px;
   box-sizing: border-box;
@@ -318,41 +367,51 @@ button:focus {
   animation-direction: normal;
   animation-timing-function: ease-out;
 }
+
 @keyframes jingle {
   0% {
     transform: scale(1) rotate(0deg);
   }
+
   25% {
     transform: scale(1.2) rotate(-5deg);
   }
+
   50% {
     transform: scale(1) rotate(0deg);
   }
+
   75% {
     transform: scale(1.2) rotate(5deg);
   }
+
   100% {
     transform: scale(1) rotate(0deg);
   }
 }
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
