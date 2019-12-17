@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Katherine Lott Portfolio</title>
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <img src="img/Cityweaver-rose.png" alt="logo of a pencil-sketched blue
+        rose" class="page-header__item page-header__logo">
+      <p id="page-header__name">Katherine Lott</p>
+      <nav class="topnav page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item
+              navigation-list__item--active">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About
+              Me</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item
+              navigation-list__item--active">Contact</a>
+          </li>
+        </nav>
+      </header>
+      <div class="contact-body">
+        <article class="contact-body__column">
+          <h1>Contact Me</h1>
+          Phone <a href="tel:+2163561869" aria-label="call 2 1 6. 3 5 6. 1 8 6
+            9."> (216) 356-1869</a><br>
+          Skype <a href="skype:proserpinafc"> Katherine Lott</a><br>
+          Email <a href="mailto:Cityweaver@gmail.com">Cityweaver@gmail.com</a>
+          <img src="img/phone.svg" alt="" id="phone">
+        </article>
+        <article class="contact-body__column">
+          <h1>Message Me</h1>
+          <form action="" method="post" id="contact-form">
+            <label for="input-name">Your Name</label>
+            <input type="text" id="input-name" required><br />
+            <label for="input-email">Your Email</label>
+            <input type="email" id="input-email" placeholder="example@xmail.com"
+              required><br />
+            <label for="input-phone">Your Phone</label>
+            <input type="tel" id="input-phone" placeholder="XXX-XXX-XXXX"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br />
+            <label for="input-subject">Subject</label>
+            <input type="text" id="input-subject"><br />
+            <label for="input-message">Message</label>
+            <textarea name="message" type="text" id="input-message"
+              placeholder="Message"></textarea><br />
+            <input type="submit" value="Submit" id="input-submit">
+          </form>
+        </article>
+      </div>
+      <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social media">
+          <img src="img/github_circle.svg" alt="Github" width="30px">
+          <img src="img/twitter_circle.svg" alt="Twitter" width="30px">
+          <img src="img/linkedin_circle.svg" alt="LinkedIn" width="30px">
+        </div>
+        <a href="https://www.freepik.com/free-photos-vectors/technology">Technology
+          vector created by rawpixel.com - www.freepik.com</a>
+      </footer>
+      <script src="js/tota11y.min.js"></script>
+    </body>
+  </html>
